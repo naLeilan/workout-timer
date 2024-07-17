@@ -10,9 +10,7 @@ function Calculator({ workouts, allowSound }) {
 
   useEffect(
     function () {
-      setDuration(
-        (dration) => (number * sets * speed) / 60 + (sets - 1) * durationBreak
-      );
+      setDuration((number * sets * speed) / 60 + (sets - 1) * durationBreak);
     },
     [number, sets, speed, setDurationBreak]
   );
